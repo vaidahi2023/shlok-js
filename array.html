@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //var arr=[1,2,3,4]
+        // console.log(arr[0])
+        // console.log(arr[1])
+        // console.log(arr[2])
+
+        // console.log(arr);
+        // arr.push(20)
+        // arr.push(24)
+        // console.log(arr);
+        // arr.pop() //it will remove last element
+        // console.log(arr);
+
+        // arr.shift() //it will remove first element of array
+        // console.log(arr);
+        // arr.unshift(21)
+        // console.log(arr)
+        
+        // arr1=arr.slice(0,2) //it will create the part of array 
+        // //slice --it will not change the original array 
+        // console.log(arr1)
+        // console.log("after slice"+(arr))
+
+        // arr2=arr.splice(1,2) 
+        // //splice(index,count of element)
+        // //splice --it will change the original array
+        // console.log(arr2)
+        // console.log("after splice"+(arr))
+
+        var arr=["parth","jay","het","harsh"]
+        //arr.splice(2,1)
+        //arr.splice(2,1,"sahil")
+        // arr.splice(2,1,"sahil","yash")
+        // console.log(arr)
+        // arr1=arr.join(",")
+        // console.log(arr1)
+        var flag=false
+        for (let index = 0; index < arr.length; index++) {
+
+          
+            console.log(arr[index])
+        }
+        for (let index = 0; index < arr.length; index++) {
+                if(arr[index]=="jay")   
+                    flag=true
+        }
+        console.log(flag)
+        flag==true?console.log(" element is present"):console.log("element is not present")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
