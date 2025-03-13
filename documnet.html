@@ -1,0 +1,34 @@
+<!-- 
+ Document --document is object of html  
+ console console.log() -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <form action="">
+         <label for="">Enter your name</label>
+         <input type="text" id="name"><br>
+         <input type="button" value="click here" onclick="printname()">
+     </form>
+     <script>
+         // document.write("welcome to html")
+         //
+         function printname()
+         {
+             let name=document.getElementById("name").value
+             console.log("name="+name)   
+             document.write("welcome to html "+name)
+         }
+         //name 
+         //email
+         //password 
+         //age
+         //date of birth
+         
+     </script>
+ </body>
+ </html>

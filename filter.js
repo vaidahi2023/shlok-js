@@ -22,7 +22,7 @@ const myCoding = [
 //     return l1.languageName
 // })
 
-//const language=myCoding.filter((l1)=> l1.languageName)
+// language=myCoding.filter((l1)=> l1.languageName)
 //const language=myCoding.filter((l1)=> { return l1.languageName})
 const language=myCoding.filter((l1)=> {
     if(l1.languageName==='java')
