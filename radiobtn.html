@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form">
+
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other <br>
+        <input type="button"  onclick="print()" value="select gender">
+        <p id="output"></p>
+    </form>
+    <script>
+        function print()
+        {
+                //let g=document.getElementById("gender").value
+                //let g=document.getElementsByName("gender").value
+                let g=document.form.gender.value
+                //document.write("gender="+g)
+                //innerHtml
+                document.getElementById("output").innerHTML=`<h1>gender=${g}</h1>`
+                //document.getElementById("output").innerHTML="your gender value is stored"
+        }
+        </script>
+</body>
+</html>
