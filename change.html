@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 name="text" id="h1">hello</h1>
+    <button onclick="setdata()">chage the text</button>
+
+    <script>
+        function setdata()
+        {
+            var t=document.getElementsByName("text")
+            for(i=0;i<t.length;i++)
+            {
+                t[i].innerHTML=t[i].innerHTML.toUpperCase()
+            }
+            console.log(t)
+            var h1=document.getElementById("h1")
+            h1.style.width="200px"
+            h1.style.backgroundColor="yellow"
+        }
+    </script>
+</body>
+</html>
