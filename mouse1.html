@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 500px;
+        width: 500px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div id="box" onmouseleave="mousel()" onmouseenter="mousee()" onmouseup="mouseu()" onmousedown="moused()" ondblclick="dbl()"></div>
+</body>
+<script>
+    function mousel(){
+        console.log("mouse left box")
+        document.getElementById("box").innerHTML="mouse left"
+    }
+    function mousee(){
+        console.log("mouse entered box")
+        document.getElementById("box").innerHTML="mouse entered"
+    }
+    function dbl(){
+        console.log("double click occured")
+        document.getElementById("box").style.color="red"
+    }
+    function mouseu(){
+        console.log("mouse moved upwards")
+    }
+    function moused(){
+        console.log("mouse moved downwards")
+    }
+</script>
+</html>

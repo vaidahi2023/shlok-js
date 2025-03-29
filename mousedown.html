@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1
+        {
+            background-color: aqua;
+            font-size: 20px;
+            height: 200px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" onmousedown="mousedown()" onmouseup="mouseup()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, delectus! Esse repudiandae optio reiciendis animi voluptate natus nulla sint ut corporis! Laudantium ab quidem minus repellendus cum, facere minima accusantium.
+    </p>
+    <script>
+        function mousedown()
+        {
+            document.getElementById("p1").style.color="red";
+        }
+        function mouseup()
+        {
+            document.getElementById("p1").style.color="blue";
+
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #p1{
+        font-size: 20px;
+        background-color: aqua;
+        height: 200px;
+        width: 300px;
+    }
+</style>
+<body>
+    <p id="p1" onmousedown="mousedown()" onmouseup="mouseup()">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa placeat facilis porro maiores dolorum a
+        laboriosam. Voluptas, commodi nam. Iure culpa placeat ipsam dolore quam explicabo corrupti impedit eum nesciunt
+        earum aut vitae voluptate, debitis eveniet repellat tempora obcaecati. Perferendis</p>
+</body>
+<script>
+    function mousedown(){
+        document.getElementById("p1").style.backgroundColor="red"
+    }
+    // function mouseup(){
+    //     document.getElementById("p1").style.color("yellow")
+    // }
+</script>
+
+</html>
