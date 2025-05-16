@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>heading 1</h2>
+    <h2>heading 2</h2>
+    <p>this is pargraph 1</p>
+    <p>this is pargraph 2</p>
+    <input type="button" name="" id="" value="change the content" onclick="change()">
+
+
+    <script>
+        function change()
+        {
+            let h2=document.getElementsByTagName("h2").item(0)
+            h2.firstChild.data="change heading"
+            let newElement=document.createElement("p");
+            let text=document.createTextNode("this is dynamic pargraph")
+            newElement.appendChild(text)
+            let p=document.getElementsByTagName("p").item(0)
+            p.parentNode.appendChild(newElement)
+        }
+    </script>
+</body>
+</html>
