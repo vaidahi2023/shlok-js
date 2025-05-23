@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first">
+        <h1>hello</h1>
+        <p>first paragraph</p>
+    </div>
+
+    <script>
+        let h1=document.createElement('h1');
+        h1.textContent='new element'
+        let div=document.querySelector('.first')
+        div.appendChild(h1)
+        // beforebegin,beforeend,afterbegin,afterend
+        div.insertAdjacentElement('beforebegin',h1)
+        let body=document.querySelector('body')
+        body.appendChild(h1)
+        h1.innerHTML='<p>heading paragraph</p>'
+        // h1.style.backgroundColor='green'
+        // h1.style.color='white'
+        h1.style.cssText='background-color:green; padding:10px; color:white;'
+        h1.className='main'
+        h1.setAttribute('id','h1')
+
+        
+    </script>
+</body>
+</html>
