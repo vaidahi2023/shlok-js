@@ -6,28 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="button" onclick="table()" value="create the table">
+    <label for="">Enter the no of rows</label>
+    <input type="text" name="" id="row">
 
-    
+    <input type="button" onclick="table()" value="create the table">
 </body>
 <script>
     function table()
     {
+        let row=document.getElementById('row').value
         let table =document.createElement('table')
         let tr=document.createElement("tr")
         let td=document.createElement("td")
 
         let body =document.querySelector("body")
         body.appendChild(table)
-        table.appendChild(tr)
-        
-        for(i=1;i<=2;i++)
-        {
-            tr.appendChild(td)
-        }
 
-        td.textContent='item'
-        table.setAttribute('border','2')
+
+       for (let i = 1; i <= row; i++) {
+        let tr = document.createElement('tr');
+        for (let j = 1; j <= 2; j++) {
+            let td = document.createElement('td');
+            td.textContent = `item ${j}`;
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+     table.setAttribute('border','2')
+     table.setAttribute('bgcolor','yellow')
+    //  table.remove()
+    table.remove()
     }
 </script>
 </html>

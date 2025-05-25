@@ -1,0 +1,25 @@
+Events are occurrences that happen in the 
+browser environment triggered by user actions or system-generated notifications
+
+An event is a signal that something has happened
+
+
+It could be a user clicking a button, hovering over an element, 
+pressing a key, or even a system event like the completion of an asynchronous task.
+
+types of events 
+
+mouse events 
+key events
+form events 
+window events
+media events
+
+target
+event listener
+
+addeventlistener 
+removeventlistener 
+
+addeventlistener('evnet name',function())
+

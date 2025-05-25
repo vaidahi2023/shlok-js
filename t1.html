@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener Task</title>
+</head>
+<body>
+
+  <p id="text">This is the original paragraph.</p>
+  <button id="myButton">Click Me</button>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const paragraph = document.getElementById("text");
+
+    button.addEventListener("click", function() {
+      paragraph.innerText = "The paragraph has been changed!";
+      paragraph.style.color = "green";
+    });
+  </script>
+
+</body>
+</html>

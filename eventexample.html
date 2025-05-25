@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="b1" value="click here">
+
+    <script>
+        var button=document.getElementById('b1')
+
+        function changecolor()
+        {
+            button.style.backgroundColor='green';
+            alert("button clicked")
+        }
+        // button.addEventListener('click',function()
+        // {
+        //     button.style.backgroundColor='green';
+        //     alert("button clicked")
+        // })
+
+        button.addEventListener('click',changecolor)
+
+    </script>
+</body>
+</html>
