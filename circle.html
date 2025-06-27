@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        cursor: grab;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle" id="circle"></div>
+    <script>
+        const circle = document.getElementById("circle")
+        let isDragging = false
+        let offsetX,offsetY;    
+
+circle.addEventListener("mousedown",(event)=>{
+
+    isDragging = true
+    offsetX = event.clientX -circle.offsetLeft
+    console.log(offsetX)
+    offsetY = event.clientY - circle.offsetTop
+    console.log(offsetY)
+    circle.style.cursor = "grabbing"
+})
+circle.addEventListener("mousemove",(event)=>{
+
+    let x = event.clientX - offsetX;
+    let y = event.clientY - offsetY
+    circle.style.left =`${x}px`
+    circle.style.top = `${y}px`
+})
+circle.addEventListener("mouseup",()=>{
+    isDragging = false
+    circle.style.cursor = "grab"
+})
+
+    </script>
+  </body>
+</html>

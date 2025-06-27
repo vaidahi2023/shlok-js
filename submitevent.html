@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Name: <input type="text" name="" id="name"> <br>
+        <span id="nameerror"></span>
+        <input type="button" name="" id="b1" value="submit">
+    </form>
+
+    <script>
+        let form=document.querySelector("form")
+    
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+            // const value=name.value
+             let name=document.getElementById("#name").value
+            console.log("name="+name)
+              
+            if(name==="" || !isNaN(name))
+            {
+                document.getElementById("nameerror").innerHTML="please enter your name";
+            }
+            else 
+            {
+                 document.getElementById("nameerror").innerHTML=`your name ${value}`;
+            }
+        });
+    </script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Submit Example</title>
+</head>
+<body>
+  <form id="myForm">
+    Name: <input type="text" id="name" name="name" /><br /> <br> <br>
+    <span id="nameerror"></span><br/> 
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const nameInput = document.getElementById("name");
+    const nameError = document.getElementById("nameerror");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      const name = nameInput.value.trim();
+
+      if (name === "" || !isNaN(name)) {
+        nameError.textContent = "Please enter your name.";
+      } else {
+        nameError.textContent = `Your name is ${name}.`;
+      }
+    });
+  </script>
+  <!-- 
+   email -- @
+   cotact no --10 -->
+</body>
+</html>
