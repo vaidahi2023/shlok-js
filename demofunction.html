@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias nulla accusamus eos labore adipisci. Odio assumenda officiis autem quod nam eligendi consequuntur nihil enim non sit, dicta earum expedita cum.</p>
+
+    <p id="p1"></p>
+
+    <script>
+        let p1=document.getElementById('p1')
+        function display(s)
+        {
+            p1.innerHTML=s
+        }
+        function first()
+        {
+            display("first function")
+        }
+        function second()
+        {
+            display("second function")
+        }
+        first()
+        second()
+        
+    </script>
+</body>
+</html>

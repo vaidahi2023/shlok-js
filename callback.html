@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        let p1=document.getElementById('p1')
+        function display(s)
+        {
+            p1.innerText=s
+        }
+        function sum(n1,n2,callsum)
+        {
+            let sum
+            sum=n1+n2
+            callsum(sum)
+        }
+        sum(12,3,display)
+    </script>
+</body>
+</html>

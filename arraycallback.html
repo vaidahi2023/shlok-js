@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[1,2,3,4,5]
+        function changearray(arr,callback)
+        {
+            for(i=0;i<arr.length;i++)
+            {
+                arr[i]=callback(arr[i])
+            }
+        }
+        function double(x)
+        {
+            return x*x;
+        }
+        changearray(a,double)
+        console.log("double array=",a)
+    </script>
+</body>
+</html>
